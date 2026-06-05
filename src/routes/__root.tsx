@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Renato Fonseca: produtor cultural, conselheiro e pré-candidato a deputado federal em defesa do axé, da cultura popular e da igualdade racial." },
       { name: "author", content: "Renato Fonseca" },
       { property: "og:title", content: "Renato Fonseca — A Voz do Axé" },
-      { property: "og:description", content: "Comunicação, cultura e presença pública em defesa do axé, da igualdade racial e da liberdade religiosa." },
+      { property: "og:description", content: "Renato Fonseca: produtor cultural, conselheiro e pré-candidato a deputado federal em defesa do axé, da cultura popular e da igualdade racial." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Renato Fonseca — A Voz do Axé" },
+      { name: "twitter:description", content: "Renato Fonseca: produtor cultural, conselheiro e pré-candidato a deputado federal em defesa do axé, da cultura popular e da igualdade racial." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/55e747d7-33c1-466c-a399-f61d263ef635/id-preview-f80e4df0--7e167b54-5802-43da-9157-57c282608f0a.lovable.app-1780684176592.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/55e747d7-33c1-466c-a399-f61d263ef635/id-preview-f80e4df0--7e167b54-5802-43da-9157-57c282608f0a.lovable.app-1780684176592.png" },
     ],
     links: [
       {
