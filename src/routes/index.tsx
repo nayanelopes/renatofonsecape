@@ -86,7 +86,7 @@ export const Route = createFileRoute("/")({
 const logoImage = logoAsset.url;
 const heroImage = renatoPhotoAsset.url;
 
-const WHATSAPP_NUMBER = "5581000000000";
+const WHATSAPP_NUMBER = "558195834294";
 const WHATSAPP_MSG = encodeURIComponent("Olá, Renato. Quero fazer parte da caminhada.");
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`;
 const INSTAGRAM_URL = "https://instagram.com/renatofonsecape";
@@ -966,13 +966,18 @@ const AGENDA: AgendaItem[] = [
   { date: "06/06", weekday: "Sábado", month: "Junho", region: "Recife", title: "Casa da Mestra Ritinha", location: "Vasco da Gama — Recife", time: "15h" },
   { date: "06/06", weekday: "Sábado", month: "Junho", region: "Recife", title: "Catimbó dos Mestres — Espaço Cultural Macumba Ordinária", location: "Santo Antônio — Recife", time: "18h" },
   { date: "10/06", weekday: "Quarta", month: "Junho", region: "Agreste", title: "Centro de Umbanda Zé do Beco", location: "Vila Social — Surubim", time: "14h" },
-  { date: "13/06", weekday: "Sábado", month: "Junho", region: "Recife", title: "Asé Alaafin", location: "Rua Dois de Fevereiro — Recife", time: "18h" },
-  { date: "21/06", weekday: "Sábado", month: "Junho", region: "Recife", title: "Roça Okueran", location: "Linha do Tiro — Recife", time: "18h" },
-  { date: "21/06", weekday: "Sábado", month: "Junho", region: "Região Metropolitana", title: "Centro Cultural Caboclo Manoel da Luz", location: "Maranguape 1 — Paulista", time: "19h" },
-  { date: "26/06", weekday: "Sexta", month: "Junho", region: "Recife", title: "Ilê Maroketú Asé Aronín", location: "Sítio Fragoso — Recife", time: "19h" },
-  { date: "27/06", weekday: "Sábado", month: "Junho", region: "Região Metropolitana", title: "Samba dos Pretos Velhos — Ano 2", location: "Pau Amarelo — Paulista", time: "18h" },
+  { date: "10/06", weekday: "Quarta", month: "Junho", region: "Recife", title: "Reunião com Mãe Gilmara — Ilé Axé Olutum Nikeré", location: "Rua Frutuosa Gomes, 72 — Várzea (Brasilit), Recife", time: "19h30" },
+  { date: "13/06", weekday: "Sábado", month: "Junho", region: "Região Metropolitana", title: "Café da Manhã + Oficina Formativa — Ilé Asé Keobambo Niwá Omin", location: "Rua Sertânia, 295 — Pau Amarelo, Paulista", time: "09h30" },
+  { date: "13/06", weekday: "Sábado", month: "Junho", region: "Recife", title: "Asé Alaafin", location: "Rua Dois de Fevereiro — Nova Descoberta, Recife", time: "18h" },
+  { date: "13/06", weekday: "Sábado", month: "Junho", region: "Recife", title: "Transmissão da Copa do Mundo + Roda de Afoxé — Casa Macumba Ordinária", location: "Pátio do Terço — Recife", time: "19h" },
+  { date: "13/06", weekday: "Sábado", month: "Junho", region: "Recife", title: "Ilé Axé Omilayo", location: "Rua da Linha, 3306 — Alto da Bondade", time: "19h30" },
+  { date: "20/06", weekday: "Sábado", month: "Junho", region: "Recife", title: "Casa José Sibamba Asé Oniré — Celebração da Mestra Maria Helena", location: "Rua Jornalista Luiz Beltrão de Andrade Lima, 02 — Iputinga, Recife", time: "15h30" },
+  { date: "21/06", weekday: "Domingo", month: "Junho", region: "Recife", title: "Roça Okueran", location: "Rua Córrego Central, 189 — Linha do Tiro, Recife", time: "18h" },
+  { date: "21/06", weekday: "Domingo", month: "Junho", region: "Região Metropolitana", title: "Centro Cultural Caboclo Emanuel da Luiz", location: "Rua 21, nº 45 — Maranguape I, Paulista", time: "19h30" },
+  { date: "27/06", weekday: "Sábado", month: "Junho", region: "Região Metropolitana", title: "Samba dos Pretos Velhos — 2ª Edição — Ilé Asé Keobambo Niwá Omin", location: "Rua Sertânia, 295 — Pau Amarelo, Paulista", time: "18h" },
   // Julho
-  { date: "14/07", weekday: "Terça", month: "Julho", region: "Região Metropolitana", title: "Canjerê Juremeiro Binho", location: "Águas Compridas — Olinda", time: "19h" },
+  { date: "14/07", weekday: "Terça", month: "Julho", region: "Região Metropolitana", title: "Canjerê Juremeiro Binho", location: "Rua Luiz Bezerra de Menezes, 38 — Águas Compridas, Olinda", time: "19h" },
+  { date: "26/07", weekday: "Domingo", month: "Julho", region: "Recife", title: "Ilé Marokétu Asé Aronin", location: "Rua Dallas, nº 05 — Sítio Fragoso, Recife", time: "19h" },
 ];
 
 const REGIOES_FILTRO = ["Todos", "Recife", "Região Metropolitana", "Zona da Mata", "Agreste", "Sertão"];
@@ -992,6 +997,24 @@ function Agenda() {
           title="Onde Renato vai estar"
           intro="Visitas, encontros, atos e eventos da pré-campanha. Filtre por região."
         />
+        <div className="mb-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="rounded-2xl border-2 border-[var(--brand-green-deep)] bg-[var(--brand-cream)] px-6 py-3 text-center shadow-sm">
+            <p className="font-serif text-3xl font-bold leading-none text-[var(--brand-green-deep)]">
+              {AGENDA.length}
+            </p>
+            <p className="mt-1 text-[10px] font-bold uppercase tracking-wider text-[var(--brand-brown-deep)]">
+              Terreiros e espaços na caminhada
+            </p>
+          </div>
+          <div className="rounded-2xl border border-[var(--brand-brown)]/30 bg-card px-6 py-3 text-center shadow-sm">
+            <p className="font-serif text-3xl font-bold leading-none text-[var(--brand-brown-deep)]">
+              {new Set(AGENDA.map((e) => e.region)).size}
+            </p>
+            <p className="mt-1 text-[10px] font-bold uppercase tracking-wider text-[var(--brand-brown-deep)]">
+              Regiões alcançadas
+            </p>
+          </div>
+        </div>
         <div className="mb-8 flex flex-wrap justify-center gap-2">
           {REGIOES_FILTRO.map((r) => (
             <button
