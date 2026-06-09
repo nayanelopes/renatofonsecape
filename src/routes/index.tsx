@@ -997,6 +997,24 @@ function Agenda() {
           title="Onde Renato vai estar"
           intro="Visitas, encontros, atos e eventos da pré-campanha. Filtre por região."
         />
+        <div className="mb-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="rounded-2xl border-2 border-[var(--brand-green-deep)] bg-[var(--brand-cream)] px-6 py-3 text-center shadow-sm">
+            <p className="font-serif text-3xl font-bold leading-none text-[var(--brand-green-deep)]">
+              {AGENDA.length}
+            </p>
+            <p className="mt-1 text-[10px] font-bold uppercase tracking-wider text-[var(--brand-brown-deep)]">
+              Terreiros e espaços na caminhada
+            </p>
+          </div>
+          <div className="rounded-2xl border border-[var(--brand-brown)]/30 bg-card px-6 py-3 text-center shadow-sm">
+            <p className="font-serif text-3xl font-bold leading-none text-[var(--brand-brown-deep)]">
+              {new Set(AGENDA.map((e) => e.region)).size}
+            </p>
+            <p className="mt-1 text-[10px] font-bold uppercase tracking-wider text-[var(--brand-brown-deep)]">
+              Regiões alcançadas
+            </p>
+          </div>
+        </div>
         <div className="mb-8 flex flex-wrap justify-center gap-2">
           {REGIOES_FILTRO.map((r) => (
             <button
