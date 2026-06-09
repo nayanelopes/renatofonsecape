@@ -86,7 +86,7 @@ export const Route = createFileRoute("/")({
 const logoImage = logoAsset.url;
 const heroImage = renatoPhotoAsset.url;
 
-const WHATSAPP_NUMBER = "5581000000000";
+const WHATSAPP_NUMBER = "558195834294";
 const WHATSAPP_MSG = encodeURIComponent("Olá, Renato. Quero fazer parte da caminhada.");
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`;
 const INSTAGRAM_URL = "https://instagram.com/renatofonsecape";
