@@ -406,6 +406,11 @@ function Story() {
               o <strong>Espaço Cultural Macumba Ordinária</strong>, no Recife.
             </p>
             <p>
+              É também <strong>estudante de Direito</strong>, somando à vivência popular a
+              formação jurídica para qualificar a luta por direitos, liberdade religiosa e
+              políticas públicas.
+            </p>
+            <p>
               Hoje transforma sua trajetória em uma caminhada coletiva por mais dignidade, cultura
               e oportunidades.
             </p>
