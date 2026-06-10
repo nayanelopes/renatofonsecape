@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/dialog";
 import logoAsset from "@/assets/logo-renato.jpg.asset.json";
 import renatoPhotoAsset from "@/assets/renato-foto.png.asset.json";
+import maeAnaAsset from "@/assets/mae-ana-dois-unidos.png.asset.json";
+import casaJuvinaAsset from "@/assets/casa-deusa-juvina.jpg.asset.json";
 import {
   MessageCircle,
   Heart,
