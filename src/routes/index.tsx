@@ -441,6 +441,7 @@ const TIMELINE = [
   { title: "Defesa dos povos tradicionais", text: "Articulação com terreiros, mestres e comunidades de matriz africana e indígena." },
   { title: "Criação da Macumba Ordinária", text: "Movimento cultural independente de valorização das religiões de matriz africana." },
   { title: "Fundação do Espaço Cultural", text: "Casa de encontro, formação e celebração no coração do Recife." },
+  { title: "Estudante de Direito", text: "Formação jurídica para qualificar a luta por direitos, liberdade religiosa e políticas públicas." },
   { title: "Construção da pré-candidatura", text: "Entrada na vida pública para transformar trajetória em política pública." },
 ];
 
