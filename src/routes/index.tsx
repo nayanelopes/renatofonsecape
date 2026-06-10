@@ -1172,7 +1172,7 @@ function Galeria() {
         <div className="columns-2 gap-3 md:columns-3 lg:columns-4 [&>*]:mb-3">
           {photos.map((p) => {
             const seed = `renato-${p.cat}-${p.id}`;
-            const url = `https://picsum.photos/seed/${encodeURIComponent(seed)}/600/${
+            const url = p.src ?? `https://picsum.photos/seed/${encodeURIComponent(seed)}/600/${
               p.ratio === "tall" ? 800 : p.ratio === "wide" ? 400 : 600
             }`;
             return (
