@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/dialog";
 import logoAsset from "@/assets/logo-renato.jpg.asset.json";
 import renatoPhotoAsset from "@/assets/renato-foto.png.asset.json";
+import maeAnaAsset from "@/assets/mae-ana-dois-unidos.png.asset.json";
+import casaJuvinaAsset from "@/assets/casa-deusa-juvina.jpg.asset.json";
 import {
   MessageCircle,
   Heart,
@@ -199,7 +201,7 @@ function Header() {
 /* ============ Hero ============ */
 const HERO_STATS = [
   { n: "500 mil+", l: "Pessoas alcançadas" },
-  { n: "100+", l: "Eventos realizados" },
+  { n: "+20", l: "Eventos realizados" },
   { n: "80+", l: "Comunidades visitadas" },
   { n: "22 anos", l: "De caminhada na Jurema Sagrada" },
 ];
@@ -406,6 +408,11 @@ function Story() {
               o <strong>Espaço Cultural Macumba Ordinária</strong>, no Recife.
             </p>
             <p>
+              É também <strong>estudante de Direito</strong>, somando à vivência popular a
+              formação jurídica para qualificar a luta por direitos, liberdade religiosa e
+              políticas públicas.
+            </p>
+            <p>
               Hoje transforma sua trajetória em uma caminhada coletiva por mais dignidade, cultura
               e oportunidades.
             </p>
@@ -436,6 +443,7 @@ const TIMELINE = [
   { title: "Defesa dos povos tradicionais", text: "Articulação com terreiros, mestres e comunidades de matriz africana e indígena." },
   { title: "Criação da Macumba Ordinária", text: "Movimento cultural independente de valorização das religiões de matriz africana." },
   { title: "Fundação do Espaço Cultural", text: "Casa de encontro, formação e celebração no coração do Recife." },
+  { title: "Estudante de Direito", text: "Formação jurídica para qualificar a luta por direitos, liberdade religiosa e políticas públicas." },
   { title: "Construção da pré-candidatura", text: "Entrada na vida pública para transformar trajetória em política pública." },
 ];
 
@@ -1115,8 +1123,10 @@ const GALERIA_CATS = [
   "Bastidores",
 ];
 
-type Photo = { id: number; cat: string; ratio: "tall" | "wide" | "square"; caption: string };
+type Photo = { id: number; cat: string; ratio: "tall" | "wide" | "square"; caption: string; src?: string };
 const GALLERY: Photo[] = [
+  { id: 101, cat: "Terreiros", ratio: "tall", caption: "Casa de Mãe Ana — Dois Unidos", src: maeAnaAsset.url },
+  { id: 102, cat: "Terreiros", ratio: "wide", caption: "Casa de Deusa Juvina", src: casaJuvinaAsset.url },
   { id: 1, cat: "Terreiros", ratio: "tall", caption: "Visita ao Ilê Axé Aziri Lade" },
   { id: 2, cat: "Cultura Popular", ratio: "wide", caption: "Mestres do coco" },
   { id: 3, cat: "Espaço Cultural", ratio: "square", caption: "Casa Macumba Ordinária" },
@@ -1162,7 +1172,7 @@ function Galeria() {
         <div className="columns-2 gap-3 md:columns-3 lg:columns-4 [&>*]:mb-3">
           {photos.map((p) => {
             const seed = `renato-${p.cat}-${p.id}`;
-            const url = `https://picsum.photos/seed/${encodeURIComponent(seed)}/600/${
+            const url = p.src ?? `https://picsum.photos/seed/${encodeURIComponent(seed)}/600/${
               p.ratio === "tall" ? 800 : p.ratio === "wide" ? 400 : 600
             }`;
             return (
@@ -1200,7 +1210,7 @@ function Galeria() {
           </button>
           <figure className="max-h-[90vh] max-w-5xl" onClick={(e) => e.stopPropagation()}>
             <img
-              src={`https://picsum.photos/seed/${encodeURIComponent(`renato-${open.cat}-${open.id}`)}/1400/1000`}
+              src={open.src ?? `https://picsum.photos/seed/${encodeURIComponent(`renato-${open.cat}-${open.id}`)}/1400/1000`}
               alt={open.caption}
               className="max-h-[80vh] w-auto rounded-xl object-contain"
             />
