@@ -1123,8 +1123,10 @@ const GALERIA_CATS = [
   "Bastidores",
 ];
 
-type Photo = { id: number; cat: string; ratio: "tall" | "wide" | "square"; caption: string };
+type Photo = { id: number; cat: string; ratio: "tall" | "wide" | "square"; caption: string; src?: string };
 const GALLERY: Photo[] = [
+  { id: 101, cat: "Terreiros", ratio: "tall", caption: "Casa de Mãe Ana — Dois Unidos", src: maeAnaAsset.url },
+  { id: 102, cat: "Terreiros", ratio: "wide", caption: "Casa de Deusa Juvina", src: casaJuvinaAsset.url },
   { id: 1, cat: "Terreiros", ratio: "tall", caption: "Visita ao Ilê Axé Aziri Lade" },
   { id: 2, cat: "Cultura Popular", ratio: "wide", caption: "Mestres do coco" },
   { id: 3, cat: "Espaço Cultural", ratio: "square", caption: "Casa Macumba Ordinária" },
