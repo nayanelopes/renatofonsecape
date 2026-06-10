@@ -1210,7 +1210,7 @@ function Galeria() {
           </button>
           <figure className="max-h-[90vh] max-w-5xl" onClick={(e) => e.stopPropagation()}>
             <img
-              src={`https://picsum.photos/seed/${encodeURIComponent(`renato-${open.cat}-${open.id}`)}/1400/1000`}
+              src={open.src ?? `https://picsum.photos/seed/${encodeURIComponent(`renato-${open.cat}-${open.id}`)}/1400/1000`}
               alt={open.caption}
               className="max-h-[80vh] w-auto rounded-xl object-contain"
             />
