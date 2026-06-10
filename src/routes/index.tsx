@@ -199,7 +199,7 @@ function Header() {
 /* ============ Hero ============ */
 const HERO_STATS = [
   { n: "500 mil+", l: "Pessoas alcançadas" },
-  { n: "100+", l: "Eventos realizados" },
+  { n: "+20", l: "Eventos realizados" },
   { n: "80+", l: "Comunidades visitadas" },
   { n: "22 anos", l: "De caminhada na Jurema Sagrada" },
 ];
